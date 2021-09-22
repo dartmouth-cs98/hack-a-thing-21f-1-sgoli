@@ -1,0 +1,32 @@
+{
+  "name": "react-stripe-payment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build public/index.html --out-dir build --no-source-maps",
+    "dev": "node src/server.js & parcel public/index.html",
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "history": "^5.0.1",
+    "parcel": "^2.0.0-rc.0",
+    "parcel-bundler": "^1.12.5",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router-dom": "^5.3.0",
+    "react-stripe-elements": "^6.1.2",
+    "stripe": "^8.176.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-rc.0"
+  }
+}
