@@ -21094,40 +21094,31 @@ var _productsDefault = parcelHelpers.interopDefault(_products);
 var _checkout = require("./Checkout");
 var _checkoutDefault = parcelHelpers.interopDefault(_checkout);
 var _products1 = require("../products");
-var _s = $RefreshSig$();
 const history = _history.createBrowserHistory();
 const App = ()=>{
-    _s();
-    const [selectedProduct, setSelectedProduct] = _react.useState(null);
+    const selectedProduct = {
+        name: 'Rubber Duck',
+        desc: `Rubber ducks can lay as many eggs as the best chicken layers, and they\n            are fun to watch with their antics in your backyard, your barnyard, or\n            your pond.`,
+        price: 9.99,
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSqkN8wkHiAuT2FQ14AsJFgihZDzKmS6OHQ6eMiC63rW8CRDcbK',
+        id: 100
+    };
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Router, {
         history: history,
         __source: {
             fileName: "src/components/App.jsx",
-            lineNumber: 14
+            lineNumber: 23
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Switch, {
         __source: {
             fileName: "src/components/App.jsx",
-            lineNumber: 15
+            lineNumber: 24
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
         exact: true,
         path: "/",
-        render: ()=>/*#__PURE__*/ _reactDefault.default.createElement(_productsDefault.default, {
-                products: _products1.products,
-                selectProduct: setSelectedProduct,
-                history: history
-            })
-        ,
-        __source: {
-            fileName: "src/components/App.jsx",
-            lineNumber: 16
-        },
-        __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
-        path: "/checkout",
         render: ()=>/*#__PURE__*/ _reactDefault.default.createElement(_checkoutDefault.default, {
                 selectedProduct: selectedProduct,
                 history: history
@@ -21135,12 +21126,11 @@ const App = ()=>{
         ,
         __source: {
             fileName: "src/components/App.jsx",
-            lineNumber: 27
+            lineNumber: 25
         },
         __self: undefined
     }))));
 };
-_s(App, "LB7CKN5ei8ToaN6e4gYD7HPDpQA=");
 _c = App;
 exports.default = App;
 var _c;
